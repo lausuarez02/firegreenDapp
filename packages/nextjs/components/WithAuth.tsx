@@ -1,16 +1,15 @@
-import { useAccount } from 'wagmi';
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useEffect } from 'react';
+import { useAccount } from "wagmi";
 
-
-export const withAuth = (Component: React.FC) => {
+const withAuth = (Component: React.FC) => {
   return (props: any) => {
     const { address, isConnected } = useAccount();
     const router = useRouter();
 
     useEffect(() => {
       if (!isConnected) {
-        router.push('/'); // Redirect to login page if not connected
+        router.push("/"); // Redirect to login page if not connected
       }
     }, [isConnected, router]);
 
@@ -18,5 +17,5 @@ export const withAuth = (Component: React.FC) => {
     return isConnected ? <Component {...props} /> : null;
   };
 };
-
-withAuth.displayName = 'MyComponent';
+withAuth.displayName = "withAuth";
+export default withAuth

@@ -1,8 +1,12 @@
-'use client'
+"use client";
+
+// Component to display available nodes (collections)
+import { NFTs } from "./_components/NFTs";
+import { Nodes } from "./_components/Nodes";
 import type { NextPage } from "next";
 import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
-import { Nodes } from "./_components/Nodes"; // Component to display available nodes (collections)
-import { NFTs } from "./_components/NFTs"; // Component to display available NFTs within a node
+
+// Component to display available NFTs within a node
 
 // export const metadata = getMetadata({
 //   title: "Markteplace",

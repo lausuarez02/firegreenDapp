@@ -5,6 +5,7 @@ import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
+
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
 
@@ -15,12 +16,13 @@ const Home: NextPage = () => {
           <span className="block text-4xl font-bold text-green-600">EcoAssets</span>
           <span className="block text-2xl text-green-500 mt-2">Empowering Environmental Change through RWA</span>
         </h1>
-        
+
         <div className="bg-gradient-to-b from-green-100 to-green-200 rounded-lg p-8 shadow-lg">
           <p className="text-xl text-green-800 mb-6">
-            Welcome to EcoAssets, where we transform environmental initiatives into tangible digital assets. Our platform bridges the gap between real-world ecological projects and blockchain technology.
+            Welcome to EcoAssets, where we transform environmental initiatives into tangible digital assets. Our
+            platform bridges the gap between real-world ecological projects and blockchain technology.
           </p>
-          
+
           <div className="flex justify-center space-x-8 mb-8">
             <div className="text-center">
               {/* <TreeIcon className="h-16 w-16 text-green-600 mx-auto" /> */}
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
               <p className="mt-2 text-green-700">Reduce Waste</p>
             </div>
           </div>
-          
+
           <div className="flex justify-center mt-8 space-x-4">
             <Link href="/explore" passHref>
               <button className="btn btn-primary bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
