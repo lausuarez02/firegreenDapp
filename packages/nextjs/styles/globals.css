@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+[data-theme] {
+  --b2: 229 100% 93%; /* Background color */
+}
+
+body {
+  background-color: #d1fae5; /* Green-100 */
+  min-height: 100vh;
+  color: #065f46; /* Green-800 */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  color: #10b981; /* Green-500 */
+}
+
+p {
+  margin: 1rem 0;
+  color: #047857; /* Green-700 */
+}
+
+.btn {
+  @apply shadow-md bg-green-500 hover:bg-green-600 text-white;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none bg-green-100 hover:bg-green-200 text-green-700;
+}
