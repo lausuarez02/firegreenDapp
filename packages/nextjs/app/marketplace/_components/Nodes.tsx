@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { NFTs } from "./NFTs"; // Import the NFTs component to display NFTs for the selected node
+import { NFTs } from "./NFTs";
+
+// Import the NFTs component to display NFTs for the selected node
 
 export const Nodes = () => {
   // Sample data for nodes (collections)
@@ -35,7 +37,9 @@ export const Nodes = () => {
       {/* Display NFTs for the Selected Node */}
       {selectedNode && (
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold text-accent mb-4">NFTs in {nodes.find(node => node.id === selectedNode)?.name}</h2>
+          <h2 className="text-2xl font-semibold text-accent mb-4">
+            NFTs in {nodes.find(node => node.id === selectedNode)?.name}
+          </h2>
           {/* <NFTs nodeId={selectedNode} /> */}
         </div>
       )}
