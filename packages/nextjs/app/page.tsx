@@ -16,10 +16,9 @@ const Home: NextPage = () => {
           <span className="block text-4xl font-bold text-green-600">EcoAssets</span>
           <span className="block text-2xl text-green-500 mt-2">Empowering Environmental Change through RWA</span>
         </h1>
-
         <div className="bg-gradient-to-b from-green-100 to-green-200 rounded-lg p-8 shadow-lg">
           <p className="text-xl text-green-800 mb-6">
-            Welcome to EcoAssets, where we transform environmental initiatives into tangible digital assets. Our
+            Welcome to Fire Green, where we transform environmental initiatives into tangible digital assets. Our
             platform bridges the gap between real-world ecological projects and blockchain technology.
           </p>
 

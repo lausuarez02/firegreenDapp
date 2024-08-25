@@ -35,5 +35,15 @@
   "packageManager": "yarn@3.2.3",
   "engines": {
     "node": ">=18.17.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.7",
+    "ethers": "^6.13.2"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/sinon-chai": "^3.2.3",
+    "ethereum-waffle": "*"
   }
 }
